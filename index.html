@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Qviewer | Copyright 2017 Tom Eulenfeld | Licensed MIT -->
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Qviewer for USArray</title>
+  <!--
+  <script type='text/javascript' src='//code.jquery.com/jquery-2.1.4.min.js'></script>
+  <script type='text/javascript' src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <script type='text/javascript' src="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script>  
+  <script type='text/javascript' src="//cdn.jsdelivr.net/jquery.flot/0.8.3/jquery.flot.min.js"></script>
+  <script type='text/javascript' src="//cdn.jsdelivr.net/jquery.flot/0.8.3/jquery.flot.errorbars.min.js"></script>
+  <script type='text/javascript' src="//cdn.jsdelivr.net/jquery.flot/0.8.3/jquery.flot.resize.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.qtip.min.css"> 
+  -->
+  <script type='text/javascript' src='js/jquery-2.1.4.min.js'></script>
+  <script type='text/javascript' src="js/jquery-ui.min.js"></script>
+  <script type='text/javascript' src="js/jquery.qtip.min.js"></script>  
+  <script type='text/javascript' src="js/jquery.flot.min.js"></script>
+  <script type='text/javascript' src="js/jquery.flot.errorbars.min.js"></script>
+  <script type='text/javascript' src="js/jquery.flot.resize.min.js"></script>
+  <script type='text/javascript' src="js/qviewer.js"></script>  
+  <script type='text/javascript' src="data/results.js"></script>
+  <script type='text/javascript' src="data/stations.js"></script>  
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.qtip.min.css">
+  <link rel="stylesheet" type="text/css" href="css/qviewer.css">
+</head>
+<body>
+<h2 title="Javascript app to explore intrinsic and scattering attenuation (Q values) as well as energy site amplification factors for the contiguous US.">Qviewer for USArray</h2>
+<div id="drag1">
+  <div id="placeholder1" class="plot"></div>
+  <div id="container">
+    <img id="image" src="" alt="No image found.">
+  </div>
+</div>
+<div id="drag2">
+  <div id="placeholder2" class="plot"></div>
+  <p class="labeltext"></p>
+  <p class="xlabeltext"></p>
+  <p class="ylabeltext"></p>
+</div>
+<div id="controls">          
+  <form id="radioform">
+    <div id="radio">
+      <input type="radio" id="radio1" name="radiogr" value="Nothing" checked><label for="radio1">Nothing</label>
+      <input type="radio" id="radio2" name="radiogr" value="Qi" checked><label title="Quality factor of intrinsic attenuation" for="radio2">Qi</label>
+      <input type="radio" id="radio4" name="radiogr" value="Qsc"><label title="Quality factor of scattering attenuation" for="radio4">Qsc</label>
+      <input type="radio" id="radio7" name="radiogr" value="Qtot"><label title="Total quality factor" for="radio7">Qtot</label>
+      <input type="radio" id="radio8" name="radiogr" value="B0"><label title="Seismic albedo" for="radio8">B0</label>
+      <input type="radio" id="radio5" name="radiogr" value="R"><label title="Energy site amplification factor" for="radio5">R</label>    
+      <input type="radio" id="radio6" name="radiogr" value="nobs"><label title="Number of observations" for="radio6">nobs</label>
+    </div>
+  </form>
+  <form id="checkform">        
+    <div id="check">
+      <input type="checkbox" id="check1" value="stations" checked><label title="Show stations. Click inside the map to plot results of a single station. Hold the control key while clicking to hide a station." for="check1">Stations</label>
+      <input type="checkbox" id="check3" value="interpolate" checked><label for="check3">Interpolate</label>
+      <input type="checkbox" id="check4" value="error"><label for="check4">Error</label>        
+    </div>
+  </form>    
+  <div id="slider"></div>
+  <p class="slidertext" title="Select frequency or display slope">Test</p>
+</div> 
+</body>
+</html>

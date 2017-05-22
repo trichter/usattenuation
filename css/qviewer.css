@@ -1,0 +1,89 @@
+/* Qviewer | Copyright 2017 Tom Eulenfeld | Licensed MIT */
+h2{
+    float:  left;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+#controls{
+    position:absolute;
+    top: 120px;
+    left: 100px;
+    width: 500px;
+}
+#radio{
+    position:absolute;
+    top: 0px;
+    left: -20px;
+    width: 100%;
+}
+#check{
+    position:absolute;
+    top: 45px;
+    left: 0px;
+    width: 100%;
+}
+#slider{
+    position:absolute;
+    top: 100px;
+    left: 30px;
+    width: 200px;
+}
+.slidertext{
+    position:absolute;
+    top: 80px;
+    left: 250px;
+}
+#drag1{    
+    position:absolute;
+    left:50px;
+    top:300px;    
+    width:800px;
+    height:491.5px;}
+#drag2{
+    position:absolute;
+    left:650px;
+    top:70px;    
+    width:200px;
+    height:200px;}
+#image{
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:1;    
+    width:100%;
+    height:100%; 
+}
+.plot{
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:2;
+    width:100%;
+    height:100%;   
+}
+.slick-prev:before, .slick-next:before {
+    color: gray ! important;
+}
+.labeltext{
+    position:absolute;
+    top: -30px;
+    right: 20px;
+}
+.xlabeltext{
+    position:absolute;
+    bottom: -20px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    font-size:small;
+    color: #545454
+}
+.ylabeltext{
+    position:absolute;
+    left: -20px;
+    top: 50%;
+    font-size:small;
+    transform: rotate(270deg);
+	transform-origin: left top 0;
+    color: #545454
+}
