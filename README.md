@@ -1,11 +1,12 @@
+View results online: [*Qviewer*](https://trichter.github.io/usattenuation).
+
 ## USAttenuation: Intrinsic and scattering attenuation for the contiguous U.S.
 
 This repository contains the processing, results and visualization for the following publication:
 
 Tom Eulenfeld and Ulrich Wegler (2017), Crustal intrinsic and scattering attenuation of high-frequency shear waves in the contiguous United States, *Journal of Geophysical Research: Solid Earth*, 122, doi:[10.1002/2017JB014038](https://dx.doi.org/10.1002/2017JB014038). [[pdf](http://www.geophysik.uni-jena.de/igwphymedia/_users/eule/Eulenfeld_Wegler_2017_US_intrinsic_and_scattering_attenuation_preprint.pdf)]
 
-View results comfortably here: [*Qviewer*](https://trichter.github.io/usattenuation).
-To run the *Qviewer* application offline, clone or download the repository and open the file `visualization/Qviewer/index.html` in a browser. It will be a much smoother experience.
+To run the *Qviewer* application offline, clone or download the repository and open the file `visualization/Qviewer/index.html` in a browser.
 
 Content of folders||
 --- | ---
