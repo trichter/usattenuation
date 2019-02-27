@@ -513,6 +513,16 @@ def plot_mean():
     fig = plt.figure(figsize=(fs, 0.9 * fs))
     ax = fig.add_subplot(111)
     d = [10 ** np.array(dx) for dx in d]
+
+    print('mean values for attenuation')
+    print('freq', FREQ)
+    print(' Qi^-1 west of lon -103:', d[3])
+    print('Qsc^-1 west of lon -103:', d[5])
+    print(' Qi^-1 east of lon -103:', d[4])
+    print('Qsc^-1 east of lon -103:', d[6])
+    print(' Qi^-1:', d[0])
+    print('Qsc^-1:', d[1])
+
     c1, c2 = '#e41a1c #275982'.split()
     kw = {'lw': 2, 'dash_capstyle': 'round'}
     ax.loglog(FREQ, d[2], color='#4E4E4E', label='total', **kw)
