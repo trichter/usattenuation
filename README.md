@@ -31,8 +31,8 @@ Content of folders||
 `figs_suppl/*.pdf`   | Figures used in the electronic supplement of the article
 `tif/*.tif`          | Georeferenced TIF files
 **Visualization**    |
-`Qviewer/index.html` | Javascript application to explore all results comfortably. It allows to view results at different stations as a function of frequency.
-`how_to.ipynb`       | Jupyter notebook to demonstrate how to use the JSON and georeferenced TIF files
+`Qviewer/index.html` | Javascript application to explore all results comfortably. It allows to view results at different stations as a function of frequency. [[link]](https://trichter.github.io/usattenuation)
+`how_to.ipynb`       | Jupyter notebook to demonstrate how to use the JSON and georeferenced TIF files. [[link]](https://nbviewer.jupyter.org/github/trichter/usattenuation/blob/master/visualization/how_to.ipynb)
 
 
 ## Notes
@@ -42,9 +42,9 @@ The scripts use the *Qopen* method. Please browse the corresponding [Qopen Githu
 To run the scripts download or clone the repository and install Python3 and `cartopy gdal matplotlib numpy obspy scipy seaborn shapely shove qopen`. This can be easily achieved with anaconda:
 
 ```
-conda config --apend channels conda-forge
-conda create -n usattenuation python=3 cartopy obspy gdal seaborn shapely joblib statsmodels
-source activate usattenuation
+conda config --add channels conda-forge
+conda create -n usattenuation python=3 cartopy gdal obspy seaborn shapely statsmodels
+conda activate usattenuation
 pip install shove qopen
 ```
 
